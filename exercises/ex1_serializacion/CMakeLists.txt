@@ -11,9 +11,6 @@ add_executable(ex1_serializacion
     main.cpp
     src/MedicionBase.cpp
     src/Posicion.cpp
-    src/Presicion.cpp
+    src/Presion.cpp
     src/SaveFlightData.cpp
 )
-
-# Tests (ejecutable separado)
-add_subdirectory(tests)

@@ -40,7 +40,7 @@ public:
      * @param punto Referencia constante al punto
      * @return Área del punto (siempre 0.0)
      */
-    static double calcularArea(const Punto& punto) {
+    static double calcularArea([[maybe_unused]] const Punto& punto) {
         return 0.0;
     }
 };

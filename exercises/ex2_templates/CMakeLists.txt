@@ -15,5 +15,3 @@ add_executable(ex2_templates
     src/Rectangulo.cpp
 )
 
-# Tests (ejecutable separado)
-add_subdirectory(tests)

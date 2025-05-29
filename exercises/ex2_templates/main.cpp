@@ -7,11 +7,20 @@
 #include "include/ex2/ProcesadorFigura.hpp"
 
 int main() {
-    std::cout << "=== Demostración de Figuras Geométricas ===" << std::endl;
+    /**
+     * En cada caso se prueba se pondran a prueba: 
+     * 
+     *  1. Los constructores de cada clase 
+     *  2. Los metodos gets, y al final los modificadores (setters)
+     *  3. La sobrecarga de clase ProcesadorFigura para cada figura
+     */
+
     std::cout << std::fixed << std::setprecision(2);
     
-    // === PUNTO ===
-    std::cout << "\n--- PUNTO ---" << std::endl;
+    // =============================
+    //           PUNTO 
+    // =============================
+    std::cout << "\n\t> Punto" << std::endl;
     Punto punto1;
     Punto punto2(3.5, 2.8);
     
@@ -22,8 +31,10 @@ int main() {
     std::cout << "Punto1 después de modificar: (" << punto1.getX() << ", " << punto1.getY() << ")" << std::endl;
     std::cout << "Área del punto: " << ProcesadorFigura<Punto>::calcularArea(punto1) << std::endl;
     
-    // === CÍRCULO ===
-    std::cout << "\n--- CÍRCULO ---" << std::endl;
+    // =============================
+    //           CIRCULO 
+    // =============================
+    std::cout << "\n\t> Circulo" << std::endl;
     Circulo circulo1;
     Circulo circulo2(punto2, 5.0);
     Circulo circulo3(2.0, 3.0, 4.0);
@@ -39,8 +50,10 @@ int main() {
     std::cout << "Área del círculo2: " << ProcesadorFigura<Circulo>::calcularArea(circulo2) << std::endl;
     std::cout << "Área del círculo3: " << ProcesadorFigura<Circulo>::calcularArea(circulo3) << std::endl;
     
-    // === ELIPSE ===
-    std::cout << "\n--- ELIPSE ---" << std::endl;
+    // =============================
+    //           ELIPSE
+    // =============================
+    std::cout << "\n\t> Elipse" << std::endl;
     Elipse elipse1;
     Elipse elipse2(punto1, 6.0, 3.0);
     Elipse elipse3(0.0, 0.0, 8.0, 4.0);
@@ -56,8 +69,10 @@ int main() {
     std::cout << "Área de la elipse2: " << ProcesadorFigura<Elipse>::calcularArea(elipse2) << std::endl;
     std::cout << "Área de la elipse3: " << ProcesadorFigura<Elipse>::calcularArea(elipse3) << std::endl;
     
-    // === RECTÁNGULO ===
-    std::cout << "\n--- RECTÁNGULO ---" << std::endl;
+    // =============================
+    //           RECTANGULO
+    // =============================
+    std::cout << "\n\t> Rectangulo" << std::endl;
     Rectangulo rect1;
     Rectangulo rect2(punto1, 5.0, 3.0);
     Rectangulo rect3(1.0, 2.0, 6.0, 4.0);
@@ -75,8 +90,10 @@ int main() {
     std::cout << "Área del rectángulo2: " << ProcesadorFigura<Rectangulo>::calcularArea(rect2) << std::endl;
     std::cout << "Área del rectángulo3: " << ProcesadorFigura<Rectangulo>::calcularArea(rect3) << std::endl;
     
-    // === MODIFICACIONES ===
-    std::cout << "\n--- MODIFICANDO FIGURAS ---" << std::endl;
+    // =============================
+    //           SETTERS
+    // =============================
+    std::cout << "\n\t> Prueba de metodos setters (modificaciones)" << std::endl;
     circulo1.setRadio(3.0);
     circulo1.setCentro(5.0, 5.0);
     std::cout << "Círculo1 modificado - Nueva área: " << ProcesadorFigura<Circulo>::calcularArea(circulo1) << std::endl;

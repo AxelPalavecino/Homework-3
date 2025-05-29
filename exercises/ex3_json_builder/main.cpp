@@ -2,7 +2,9 @@
 #include "include/ex3/ConstructorDeJSON.hpp"
 
 int main() {
-    // Crear instancia del procesador de datos
+    // ===================================
+    //          EJEMPLO ENUNCIADO 
+    // ==================================
     ProcesadorDeDatos processor;
     
     // Agregar datos de diferentes tipos
@@ -25,6 +27,7 @@ int main() {
     
     builder.PrintearJSON();
     
+    // Guarda del archivo JSON por si quiero verificar su contenido
     builder.guardarEnArchivo("output.json");
     
     return 0;
