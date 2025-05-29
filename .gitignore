@@ -1,0 +1,23 @@
+# Build directory
+build/
+
+# Object files, binary files
+*.o
+*.obj
+*.exe
+*.bin
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# IDE files
+.vscode/
+.idea/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
