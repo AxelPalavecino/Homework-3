@@ -2,15 +2,6 @@
 #include <iostream>
 #include <fstream>
 
-
-void ConstructorDeJSON::agregarSeccion(const std::string& etiqueta, const std::string& contenido) {
-    if (etiqueta.empty() || contenido.empty()) {
-        std::cerr << "Error: Etiqueta o contenido vacio." << std::endl;
-        return;
-    }
-    partesJSON.emplace_back(etiqueta, contenido);
-} 
-
 void ConstructorDeJSON::PrintearJSON() const {
     std::cout << "{\n"; 
     auto iterador = partesJSON.begin(); 
